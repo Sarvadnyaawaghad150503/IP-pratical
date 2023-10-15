@@ -1,0 +1,85 @@
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+    }
+    header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    }
+    nav ul {
+    list-style-type: none;
+    }
+    nav li {
+    display: inline;
+    margin-right: 20px;
+    }
+    nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+    }
+    nav a:hover {
+    color: #ff9900;
+    }
+
+    .hero {
+    background-image: url('background.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+    position: relative;
+    }
+    .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    }
+    .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    }
+    .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    }
+    .btn:hover {
+    background-color: #ff6600;
+    }
+    /* Flexbox for Features Section */
+    .features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    }
+    .feature {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    }
+    .feature:hover {
+    transform: scale(1.05);
+    }
+    footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+        <h2>Enter Number 1</h2>
+        <input type="number" id="n1">
+
+        <h2>Enter Number 2</h2>
+        <input type="number" id="n2">
+<br>
+        <button type="button" onclick= " add()">Add</button>
+        <button type="button" onclick= "sub()">subtract</button>
+        <button type="button" onclick= "mult()">multiply</button>
+        <button type="button" onclick= "divide()">divide</button>
+        <h2 id="res"  >Result :  </h2>
+    
+</body>
+<script>
+    var n1 = document.getElementById("n1");
+    var n2 = document.getElementById("n2");
+        var result = 0;
+function add(){
+        result = parseFloat(n1.value) + parseFloat(n2.value) ;
+        update()
+}
+function sub(){
+    result =  parseFloat(n1.value) - parseFloat(n2.value);
+    update()
+}
+function mult(){
+    result =  parseFloat(n1.value) *  parseFloat(n2.value);
+    update()
+}
+function divide(){
+    result =  parseFloat(n1.value) / parseFloat(n2.value);
+    update()
+}
+function update() {
+    document.getElementById('res').textContent = "Result: " + result;
+}
+
+</script>
+</html>

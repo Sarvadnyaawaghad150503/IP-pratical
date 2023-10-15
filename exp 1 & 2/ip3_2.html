@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form div {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 80%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<header style="display: flex; justify-content: center; align-items: center; ">
+    <img src="ves.png" alt="" height="50px" style="margin: 5px;" >
+    <h1>VESIT Admission Form</h1>
+</header>
+<body>
+    
+    <form action="submit.php" method="post">
+        <div style="display: flex ; ">
+        <div style="margin: 4px;">
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div  style="margin: 4px;">
+            <label for="name">Father's Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div  style="margin: 4px;">
+            <label for="name">Surname:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+    </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+            <label for="dov">Date of Birth:</label>
+            <input type="date" id="phone" name="phone" required>
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <label for="adhar">Upload Adhar Card</label>
+            <input type="file" name="Adhar" id="">
+        </div>
+        <div>
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>Select your course</option>
+                <option value="computer">Computer Engineering</option>
+                <option value="electronics">Electronics Engineering</option>
+                <option value="mechanical">Mechanical Engineering</option>
+                <!-- Add more courses here -->
+            </select>
+        </div>
+        <div>
+            <label for="comments">Additional Comments</label>
+            <textarea name="message" id="message" cols="10" rows="10"></textarea>
+        </div>
+       
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
